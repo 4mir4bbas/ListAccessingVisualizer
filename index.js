@@ -1,4 +1,6 @@
 /*
+    Universiy of Tehran
+    Department of Engineering Sciences
     Visualizer for List Accessing Algorithms
     Code by: sheback (*Amir Abbas Bakhshipour*)
 
@@ -97,7 +99,6 @@ class Visualizer extends React.Component {
             init: 1,
             submited: this.state.inputValue,
         });
-        console.log(this.state.list);
     }
 
     handleChange(event){
@@ -118,8 +119,7 @@ class Visualizer extends React.Component {
     }
 
     handleRequestSubmit(event){
-        event.preventDefault();
-        // console.log("here"); //debug        
+        event.preventDefault();      
         this.setState({
             sentence: "Looking for requested item in the list...",
             situation: 1
@@ -131,7 +131,6 @@ class Visualizer extends React.Component {
         let sit = this.state.situation;
         if (sit == 1){
             let req = parseInt(this.state.request);
-            // console.log(this.state.list); //debug
             let idx = this.state.list.indexOf(req);
             if (idx != -1){        
                 document.getElementById(`c${idx}`).style.backgroundColor = "red";
@@ -155,15 +154,12 @@ class Visualizer extends React.Component {
             let updatedLists = BIT(this.state.list, this.state.bits, req);
             let updatedItemList = updatedLists[0];
             let updatedBitsList = updatedLists[1];
-            console.log(updatedItemList); //debug
-            console.log(updatedBitsList); //debug
             this.setState({
                 list: updatedItemList,
                 bits: updatedBitsList,
                 situation: 4
             }, function(){
                 req = parseInt(this.state.request);
-                // console.log(this.state.list); //debug
                 let idx = this.state.list.indexOf(req);        
                 document.getElementById(`c${idx}`).style.backgroundColor = "red";
                 document.getElementById(`b${idx}`).style.backgroundColor = "red";
@@ -177,7 +173,6 @@ class Visualizer extends React.Component {
             });
         }else if (sit == 5){
             let req = parseInt(this.state.request);
-            // console.log(this.state.list); //debug
             let idx = this.state.list.indexOf(req);
             if (idx != -1){        
                 document.getElementById(`c${idx}`).style.backgroundColor = "white";
