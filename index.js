@@ -238,9 +238,9 @@ class InitialForm extends React.Component {
                     </select>
                 <br />
                 <label>Enter 10 comma separated integers</label>
-                <input onChange={this.props.handleChange} value={this.props.input} placeholder={"ex:1,2,3,4,5,6,7,8,9,10"} autofocus />
+                <input onChange={this.props.handleChange} value={this.props.input} placeholder={"ex:1,2,3,4,5,6,7,8,9,10"} autoFocus />
                 <br />
-                <button type="submit">Submit</button>
+                <button type="submit">Initiate</button>
             </form>
         );
     }
@@ -297,14 +297,14 @@ class Handler extends React.Component {
             return (
                     <form onSubmit={this.props.handleRequestSubmit} id="handler-1">
                         <label id="request-label">Request</label>
-                        <input id="request-input" value={this.props.request} onChange={this.props.handleRequestChange} autofocus/>
+                        <input id="request-input" value={this.props.request} onChange={this.props.handleRequestChange} autoFocus/>
                         <button id="request-button" type="submit">Access</button>
                     </form>
                     );
         }
         return (
             <form id="handler-2" onSubmit={this.props.handleNextSubmit}>
-                <button type="submit" id="next">Next Step</button>
+                <button type="submit" id="next" autoFocus>Next Step</button>
             </form>
         );
     }
