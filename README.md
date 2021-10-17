@@ -1,6 +1,6 @@
-# List Accessing Algorithms Visualizer
-The source code of this project is licensed under <a href="https://en.wikipedia.org/wiki/MIT_License" target="_blank">MIT license</a>.<br>
-Code by: sheback (*Amir Abbas Bakshipour*)
+## University of Tehran<br>Department of Engineering Sciences
+### List Accessing Algorithms Visualizer
+The source code of this project is pusblished under <a href="https://en.wikipedia.org/wiki/MIT_License" target="_blank">MIT license</a>.<br>
 
 ## Running:
 1. Install <a href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code</a>.
