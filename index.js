@@ -250,7 +250,7 @@ class ListVisualizer extends React.Component {
         return (
             <div key={this.props.list} id="card-bits-container">
                 <div className="card-container">
-                    <Card value={"Front"} />
+                    <Card value={"F"} />
                     <Card index={"c0"} value={this.props.list[0]} />
                     <Card index={"c1"} value={this.props.list[1]} />
                     <Card index={"c2"} value={this.props.list[2]} />
@@ -261,11 +261,11 @@ class ListVisualizer extends React.Component {
                     <Card index={"c7"} value={this.props.list[7]} />
                     <Card index={"c8"} value={this.props.list[8]} />
                     <Card index={"c9"} value={this.props.list[9]} />
-                    <Card value={"End"} />
+                    <Card value={"E"} />
                     
                 </div>
                 <div id="bits-container">
-                <Card value={"Bits"} />
+                <Card value={"B"} />
                     <Card index={"b0"} value={this.props.bits[0]} />
                     <Card index={"b1"} value={this.props.bits[1]} />
                     <Card index={"b2"} value={this.props.bits[2]} />
